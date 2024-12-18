@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gender Equality</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="SDG 5 icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    
+    <style>
+        header { 
+            background-color: #BF3131; 
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 10px 5px 5px #f5f5f5;
+        }
+        .fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;   
+        }
+        .newsletter{
+            color: white;
+        }
+        .h1 { 
+            margin: 0; 
+            font-size: 35px;
+            color: white;
+            display: inline;
+        } 
+        nav { 
+            float: left;
+            position: fixed;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 180px;
+            background-color: #383838;
+        }
+        nav a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+        nav a:hover {
+            background-color: #7e7e7e;
+        }
+        main { 
+            background-color:#FFFFFF;
+            overflow: hidden;
+            margin-left: 172px;
+            padding: 20px;
+            margin-top: 50px; /* Adjusted to reduce space */
+            margin-right: -10px;
+        }  
+        footer { 
+            padding: 1px;
+            margin-left: 172px;  
+            text-align: center;
+            font-style: italic;
+            background-color: #BF3131; 
+            color: white;
+            position: sticky;
+            margin-bottom: -10px;
+            margin-right: -10px;
+        }
+
+        body{
+            font-family: 'Raleway', sans-serif;
+            background-color: #7D0A0A;
+        }
+
+        @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-link {
+                margin-top: 10px;
+            }
+
+            main{
+                margin-top: 80px; /* Adjusted to reduce space on small screens */
+                margin-left: 112px;
+            }
+            nav ul{
+                width: 120px;
+                text-indent: -5px;
+            }
+            footer{
+                margin-left: 112px;
+            }
+        }
+       
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #BF3131;
+        }
+        .social-icons a:hover {
+            color: #A12A2A;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .contact-form {
+            background-color: #F8F8F8;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #BF3131;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #A12A2A;
+        }
+        table {
+  border-collapse: collapse;
+  border: 3px solid rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+thead,
+tfoot {
+  background-color: rgb(237, 119, 119);
+}
+
+th,
+td {
+  border: 1px solid rgb(113, 15, 15);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(255, 236, 236);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+h1 {
+    color: #7D0A0A;
+}
+h2 {
+    color: #7D0A0A;
+}
+
+</style>
+<div class="fixed">
+    <header> 
+        <h1 class="h1">Gender Equality</h1>      
+        <a class="newsletter" href="newsletter.html">Subscribe to our newsletter</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="KeyData&Insights.html">Key Data & Insights</a></li>
+            <li><a href="PersonalNarratives.html">Personal Narratives</a></li>
+            <li><a href="LearningHub.html">Learning Hub</a></li>
+            <li><a href="Policy.html">Policy & Advocacy</a></li>
+            <li><a href="Orgs&Movements.html">Organizations & Movements</a></li>
+            <li><a href="TakeAction.html">Take Action</a></li>
+            <li><a href="Summary.html">Summary & Next Steps</a></li>
+            
+        </ul>
+    </nav>
+</div>
+
+<main>
+    <div class="main">
+        <div class="section">
+            <h1>Learning Hub</h1>
+            <img src = https://fullcircleinsights.com/wp-content/uploads/2024/01/books-women-should-read.jpg>
+            <h2 class="h2">Explore Articles</h2>
+            <p>Educating about Gender Equality can be important for multiple reasons such as:</p>
+            <ul>
+                <li>Promoting fairness and justice</li>
+                <li>Empower individuals</li>
+                <li>Personal Goal and Empathy</li>
+            </ul> 
+        </div>
+        <hr>
+        <div class="section">
+            <h2 class="h2">Sources and Pathways</h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Articles</th>
+                    <th scope="col">Videos</th>
+                    <th scope="col">Infographics</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><a href="https://www.unicef.org/gender-equality">Advancing Gender Equality: Challenges and Progress</a></th>
+                    <td><a href="https://youtu.be/MsbAETRE7b4?si=0Yy6BlBTRBTQKSYc">Building a Fairer World</a></td>
+                    <td><a href="https://youtu.be/JtR2ea2dTQM?si=0ZvVnKh9g2lc5N3B">Gender Equality: Facts and Figures</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><a href="https://www.unicef.org/gender-equality">Inclusive Futures: Promoting Gender Equity</a></th>
+                    <td><a href="https://youtu.be/MsbAETRE7b4?si=0Yy6BlBTRBTQKSYc">Stories from the Frontlines</a></td>
+                    <td><a href="https://youtu.be/JtR2ea2dTQM?si=0ZvVnKh9g2lc5N3B">Gender Equality in Numbers</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><a href="https://www.unicef.org/gender-equality">Beyond Gender Bias: Paths to Equality</a></th>
+                    <td><a href="https://youtu.be/MsbAETRE7b4?si=0Yy6BlBTRBTQKSYc">Empowering Gender Equality</a></td>
+                    <td><a href="https://youtu.be/JtR2ea2dTQM?si=0ZvVnKh9g2lc5N3B">Gender Equality Around the Globe</a></td>
+                  </tr>
+                  <tr>
+                    <th><a href="https://www.unicef.org/gender-equality">Addressing Gender Bias in Today's Society</a></td>
+                    <td><a href="https://youtu.be/MsbAETRE7b4?si=0Yy6BlBTRBTQKSYc">Women Strides and Obstacles</a></td>
+                    <td><a href="https://youtu.be/JtR2ea2dTQM?si=0ZvVnKh9g2lc5N3B">Infographic Insights on Gender</a></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div> 
+        <hr>
+        <div class="section">
+            <h2 class="h2">Forums</h2>
+            <p>Interact and ask questions with users who wants to learn!</p>
+            <a href="https://www.reddit.com/?feed=home">Find users similar to you</a>
+        </div>
+        <hr>
+        <div class="section">
+            <h2>Contact Us | We value your feedbacks </h2>
+            <div class="contact-form">
+                <form action="contact_form.php" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+  
+        <div class="social-icons">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/equalitynoworg/" target="_blank">Facebook</a>
+            <a href="https://x.com/UN_Women?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/equalitynoworg/?hl=en" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/pulse/what-actually-creates-gender-equality-work-emilie-aries-sphr" target="_blank">LinkedIn</a>
+        </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Gender Equality. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gender Equality</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="SDG 5 icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <style>
+	.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #BF3131;
+}
+.social-icons a:hover {
+    color: #A12A2A;
+}
+.contact-form {
+    background-color: #F8F8F8;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+.contact-form input[type="submit"] {
+    background-color: #BF3131;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #A12A2A;
+}
+
+        header { 
+            background-color: #BF3131; 
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 10px 5px 5px #f5f5f5;
+        }
+        .fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;   
+        }
+        .newsletter{
+            color: white;
+        }
+        .h1 { 
+            margin: 0; 
+            font-size: 35px;
+            color: white;
+            display: inline;
+        } 
+        nav { 
+            float: left;
+            position: fixed;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 180px;
+            background-color: #383838;
+        }
+        nav a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+        nav a:hover {
+            background-color: #7e7e7e;
+        }
+        main { 
+            background-color:#FFFFFF;
+            overflow: hidden;
+            margin-left: 172px;
+            padding: 20px;
+            margin-top: 70px;
+            margin-right: -10px;
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+        }  
+        footer { 
+            padding: 1px;
+            margin-left: 172px;  
+            text-align: center;
+            font-style: italic;
+            background-color: #BF3131; 
+            color: white;
+            position: sticky;
+            margin-bottom: -10px;
+            margin-right: -10px;
+        }
+        body{
+            font-family: 'Raleway', sans-serif;
+            background-color: #7D0A0A;
+            flex-direction: row;
+        }
+        .box1, .box2, .box3, .box4, .box5, .box6 {
+            border-radius: 35px;
+            padding: 20px;
+            margin: 50px 20px 0px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            max-width: 400px; 
+
+	    max-height: 590px;
+            font-family: Arial, sans-serif;
+            flex: 1; /*boxes to grow and shrink */
+            min-width: 250px; 
+	    min-height: 370px;
+        }
+	.box p{
+	    color: white;
+	}
+	.box1{
+            background-color: #EE4262; 
+	}
+	.box2{
+            background-color: #FF9EAA; 
+	}
+	.box3{
+            background-color: #D10363; 
+	}
+	.box4{
+            background-color: #FF5580; 
+	}
+	.box5{
+            background-color: #A91D3A; 
+	}
+	.box6{
+            background-color: #C73659;  
+	}
+	.box img {
+            width: 105%;
+	    height: 75%;
+            border-radius: 20px;
+            margin-bottom: 15px;
+	    margin:-10px;
+	}
+	.box a{
+	    text-decoration: none;
+	    color: white;
+	}
+	.box a:hover{
+	    text-decoration: none;
+	    color: blue;
+	}
+	.title {
+		width: calc(130% - 272px); /* Adjusted width to span over the main content area */
+		position: relative; /* Added position relative to ensure z-index works */
+		z-index: 1; /* Ensure it's above the main content boxes */
+	}		
+	.section {
+		width: calc(130% - 272px); /* Adjusted width to span over the main content area */
+		margin-top: 20px; /* Added margin-top for spacing */
+		position: relative; /* Added position relative to ensure z-index works */
+		z-index: 1; /* Ensure it's above the main content boxes */	
+	}
+	.social-icons {
+		width: calc(130% - 272px); /* Adjusted width to span over the main content area */
+		position: relative; /* Added position relative to ensure z-index works */
+		z-index: 1; /* Ensure it's above the main content boxes */
+	}
+	
+        @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-link {
+                margin-top: 10px;
+            }
+            main{
+                margin-top: 100px;
+                margin-left: 112px;
+                flex-direction: column; /* Add this to stack boxes vertically on small screens */
+            }
+            nav ul{
+                width: 120px;
+                text-indent: -5px;
+            }
+            h2{
+                font-style: bold;
+                text-align: center;
+            }
+            footer{
+                margin-left: 112px;
+            }
+        }
+	
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <header> 
+            <h1 class="h1">Gender Equality</h1>      
+            <a class="newsletter" href="newsletter.html">Subscribe to our newsletter</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="KeyData&Insights.html">Key Data & Insights</a></li>
+                <li><a href="PersonalNarratives.html">Personal Narratives</a></li>
+                <li><a href="LearningHub.html">Learning Hub</a></li>
+                <li><a href="Policy.html">Policy & Advocacy</a></li>
+                <li><a href="Orgs&Movements.html">Organizations & Movements</a></li>
+                <li><a href="TakeAction.html">Take Action</a></li>
+                <li><a href="Summary.html">Summary & Next Steps</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+	<div class="title">
+    		<h3>PERSONAL NARRATIVES</h3>
+	</div>	
+	
+        <div class="box1 box">
+	    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*ROgLl4ujCqVy2CVTOu_cmA.jpeg" alt="Article Image">
+            <h3><a href="https://medium.com/@myyzhang/two-personal-stories-on-gender-discrimination-fb403d0d1ac9">Two Personal Stories on Gender Discrimination</a></h3>
+            <p>Personal narratives by Michelle Zhang</p>
+        </div>
+
+        <div class="box2 box">
+	    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/0*ot_npCfABTfCa1EC" alt="Article Image">
+            <h3><a href="https://medium.com/@chaudharykanika203/the-unyielding-fight-for-equality-feminism-in-2024-%EF%B8%8F-%EF%B8%8F-%EF%B8%8F-79ad537e0538">The Unyielding Fight for Equality: Feminism in 2024</a></h3>
+            <p>Personal narratives by Realityhits</p>
+        </div>
+
+        <div class="box3 box">
+	    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*BdbrGh4O0wvVTQ0Zh_wIuQ.jpeg" alt="Article Image">
+            <h3><a href="https://medium.com/@myyzhang/two-personal-stories-on-gender-discrimination-fb403d0d1ac9">The “Miracle of Life” is the Courage of Women</a></h3>
+            <p>Personal narratives by K. M. Lang</p>
+        </div>
+
+        <div class="box4 box">
+	    <img src="https://miro.medium.com/v2/resize:fit:786/format:webp/1*kGa_orbCWhdxUWrBTE7lYg@2x.jpeg" alt="Article Image">
+            <h3><a href="https://medium.com/@myyzhang/two-personal-stories-on-gender-discrimination-fb403d0d1ac9">there’s more than a lipstick and hairbrush at a girl’s bag</a></h3>
+            <p>Personal narratives by keng</p>
+        </div>
+
+        <div class="box5 box">
+	    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/0*Ss7vmEQ_NE2PQZ_C" alt="Article Image">
+            <h3><a href="https://medium.com/@chaudharykanika203/the-unyielding-fight-for-equality-feminism-in-2024-%EF%B8%8F-%EF%B8%8F-%EF%B8%8F-79ad537e0538">STEM Education: A Path to Female Empowerment</a></h3>
+            <p>Personal narratives by Victoria Corindi</p>
+        </div>
+
+        <div class="box6 box">
+	    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*leCXeQb3e_ENTLxTZ--bew.jpeg" alt="Article Image">
+            <h3><a href="https://medium.com/@myyzhang/two-personal-stories-on-gender-discrimination-fb403d0d1ac9">As a Woman, I Feel Sorry. But, As a Daughter, I’m Angry</a></h3>
+            <p>Personal narratives by Nabila A. Mirandini</p>
+        </div>
+
+
+	<div class="section">
+                <h2>Contact Us | We value your feedbacks </h2>
+                <div class="contact-form">
+                    <form action="contact_form.php" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/equalitynoworg/" target="_blank">Facebook</a>
+                <a href="https://x.com/UN_Women?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/equalitynoworg/?hl=en" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/pulse/what-actually-creates-gender-equality-work-emilie-aries-sphr" target="_blank">LinkedIn</a>
+            </div>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Gender Equality. All rights reserved.</p>
+    </footer>
+</body>
+</html>

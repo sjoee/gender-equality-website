@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gender Equality</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="SDG 5 icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    
+    <style>
+        header { 
+            background-color: #BF3131; 
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 10px 5px 5px #f5f5f5;
+        }
+        .fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;   
+        }
+        .newsletter{
+            color: white;
+        }
+        .h1 { 
+            margin: 0; 
+            font-size: 35px;
+            color: white;
+            display: inline;
+        } 
+        nav { 
+            float: left;
+            position: fixed;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 180px;
+            background-color: #383838;
+        }
+        nav a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+        nav a:hover {
+            background-color: #7e7e7e;
+        }
+        main { 
+            background-color:#FFFFFF;
+            overflow: hidden;
+            margin-left: 172px;
+            padding: 20px;
+            margin-top: 50px; /* Adjusted to reduce space */
+            margin-right: -10px;
+        }  
+        footer { 
+            padding: 1px;
+            margin-left: 172px;  
+            text-align: center;
+            font-style: italic;
+            background-color: #BF3131; 
+            color: white;
+            position: sticky;
+            margin-bottom: -10px;
+            margin-right: -10px;
+        }
+
+        body{
+            font-family: 'Raleway', sans-serif;
+            background-color: #7D0A0A;
+        }
+
+        @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-link {
+                margin-top: 10px;
+            }
+
+            main{
+                margin-top: 80px; /* Adjusted to reduce space on small screens */
+                margin-left: 112px;
+            }
+            nav ul{
+                width: 120px;
+                text-indent: -5px;
+            }
+            footer{
+                margin-left: 112px;
+            }
+        }
+        
+        .hero {
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px; /* Adjusted to reduce space */
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+        .section {
+            padding: 40px 20px; /* Adjusted to reduce space */
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section p {
+            margin-bottom: 10px; /* Adjusted to reduce space between paragraphs */
+        }
+        .policies, .advocacy, .resources {
+            margin: 20px 0;
+        }
+        .policies ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .advocacy img {
+            max-width: 50%; /* Adjust this value as needed */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .advocacy iframe {
+            width: 100%;
+            height: 315px;
+            margin-top: 20px;
+        }
+        
+        .cta-button {
+            background-color: #BF3131;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #A12A2A;
+        }
+
+        .testimonial {
+            background-color: #F8F8F8;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #BF3131;
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+        .newsletter-signup {
+            background-color: #F8F8F8;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .newsletter-signup input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .newsletter-signup input[type="submit"] {
+            background-color: #BF3131;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter-signup input[type="submit"]:hover {
+            background-color: #A12A2A;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #BF3131;
+        }
+        .social-icons a:hover {
+            color: #A12A2A;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .carousel img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+        .carousel img:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            background-color: #F8F8F8;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #BF3131;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #A12A2A;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <header> 
+            <h1 class="h1">Gender Equality</h1>      
+            <a class="newsletter" href="newsletter.html">Subscribe to our newsletter</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="KeyData&Insights.html">Key Data & Insights</a></li>
+                <li><a href="PersonalNarratives.html">Personal Narratives</a></li>
+                <li><a href="LearningHub.html">Learning Hub</a></li>
+                <li><a href="Policy.html">Policy & Advocacy</a></li>
+                <li><a href="Orgs&Movements.html">Organizations & Movements</a></li>
+                <li><a href="TakeAction.html">Take Action</a></li>
+                <li><a href="Summary.html">Summary & Next Steps</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <!--YOUR CONTENT HERE-->
+
+        <div class="section">
+            <h2>About Our Initiative</h2>
+            <p>Our mission is to empower women and promote gender equality through effective policy advocacy and public awareness campaigns.</p>
+            <img src="https://media.licdn.com/dms/image/D4E12AQFuC1uULQriuA/article-cover_image-shrink_720_1280/0/1704463730900?e=2147483647&v=beta&t=-R_ZphqkXNFXDBZZp3f1Oh94ugonKowKUY_3A3BnDbc" alt="Women in leadership roles">
+        </div>
+
+        <div class="section policies">
+            <h2>Our Policies</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=a699XDT_uWw">Policy 1: Equal Pay</a></li>
+                <li><a href="https://www.youtube.com/watch?v=3AF9Rjki0DE">Policy 2: Gender-Based Violence Prevention</a></li>
+                <li><a href="https://www.youtube.com/watch?v=2LyS0sxsHyE">Policy 3: Women's Health</a></li>
+            </ul>
+        </div>
+
+        <div class="section advocacy">
+            <h2>Advocacy Efforts</h2>
+            <p><strong>Our advocacy efforts</strong> include lobbying for legislative changes, raising public awareness, and partnering with other organizations to promote gender equality.</p>
+            <img src="https://i0.wp.com/www.rightsofequality.com/wp-content/uploads/2022/09/gayatri-malhotra-cL7KRmpELqE-unsplash-scaled.jpg?fit=2560%2C1707&ssl=1" alt="Women's Right Advocacy Event">
+        </div>
+
+        <div class="section resources">
+            <h2>Resources</h2>
+            <table border="1">
+                <tr>
+                    <th>Resource</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Report on Gender Equality</td>
+                    <td>A comprehensive report on the state of gender equality worldwide.</td>
+                    <td><a href="https://focus2030.org/Gender-inequality-around-the-world-in-2024-special-report#:~:text=%2D%20The%20gender%20pay%20gap%20is,family%20%2D%20UN%20Women%2C%202022.">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Advocacy Toolkit</td>
+                    <td>A toolkit for advocates working to promote gender equality.</td>
+                    <td><a href="https://ngocsw.org/wp-content/uploads/2024/01/NGO-CSW68-Advocacy-Toolkit-compressed.pdf">Download</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Subscribe To Receive Our latest NewsLetter</h2>
+            <div class="newsletter-signup">
+                <form action="newsletter_signup.php" method="post">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+
+       <div class="section">
+    <h2>Testimonials</h2>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="https://img.freepik.com/premium-photo/teamwork-young-people-discussing-about-women-rights-equality-office-caucasian-businesswomen-office-workers-have-meeting-about-problem-workplace-male-pressure-harassment_489646-5709.jpg" alt="Testimonial 1"><p>"Gender equality is essential for societal development. This initiative is doing a fantastic job!" - Alice</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://t3.ftcdn.net/jpg/01/91/85/06/360_F_191850653_IkzN9vZTtOtJ8NTKLKOp8PlaY8iCk6Ls.jpg" alt="Testimonial 2"><p>"I'm proud to support this cause. Together, we can make a difference." - Bob </p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://theamikusqriae.com/wp-content/uploads/2024/05/32671160945_abcc7f76b0_o0.jpg.940x529_q85_box-7020451150_crop_detail.jpg" alt="Testimonial 3">
+                <p>"A great platform to raise awareness and advocate for women's rights." - Carol</p>
+            </div>
+        </div>
+        <button class="carousel-prev">❮</button>
+        <button class="carousel-next">❯</button>
+    </div>
+</div>
+
+        <div class="section">
+            <h2>Contact Us | We value your feedbacks </h2>
+            <div class="contact-form">
+                <form action="contact_form.php" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/equalitynoworg/" target="_blank">Facebook</a>
+            <a href="https://x.com/UN_Women?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/equalitynoworg/?hl=en" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/pulse/what-actually-creates-gender-equality-work-emilie-aries-sphr" target="_blank">LinkedIn</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gender Equality. All rights reserved.</p>
+    </footer>
+</body>
+</html>

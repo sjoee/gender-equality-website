@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gender Equality</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="SDG 5 icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header { 
+            background-color: #BF3131; 
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 10px 5px 5px #f5f5f5;
+        }
+        .fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;   
+        }
+        .newsletter {
+            color: white;
+        }
+        .h1 { 
+            margin: 0; 
+            font-size: 35px;
+            color: white;
+            display: inline;
+        } 
+        nav { 
+            float: left;
+            position: fixed;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 180px;
+            background-color: #383838;
+        }
+        nav a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+        nav a:hover {
+            background-color: #7e7e7e;
+        }
+        main { 
+            background-color: #FFFFFF;
+            overflow: hidden;
+            margin-left: 172px;
+            padding: 20px;
+            margin-top: 70px;
+            margin-right: -10px;
+        }  
+        footer { 
+            padding: 1px;
+            margin-left: 172px;  
+            text-align: center;
+            font-style: italic;
+            background-color: #BF3131; 
+            color: white;
+            position: sticky;
+            margin-bottom: -10px;
+            margin-right: -10px;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #7D0A0A;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: calc(20% - 20px); /* 20% width with margin */
+            margin-bottom: 20px; /* Space between boxes */
+            padding: 10px;
+            background-color: #ffffff;
+            max-width: 200px; 
+            min-width: 180px; 
+            text-align: center; /* Center-align content */
+        }
+        .container2 .box {
+            width: calc(20% - 20px); /* 20% width with margin */
+            margin-bottom: 20px; /* Space between boxes */
+            padding: 10px;
+            background-color: #ffffff;
+            max-width: 500px; 
+            min-width: 300px; 
+            text-align: center; /* Center-align content */
+        }
+        .box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .box p {
+            font-size: 14px;
+            color: #555;
+        }
+        .box a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .box a:hover {
+            color: gray;
+            text-decoration: none;
+        }
+        .box img {
+            width: 100%; /* Adjust image size to fill the box */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px; /* Space below image */
+        }
+
+	.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #BF3131;
+}
+.social-icons a:hover {
+    color: #A12A2A;
+}
+.contact-form {
+    background-color: #F8F8F8;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+.contact-form input[type="submit"] {
+    background-color: #BF3131;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #A12A2A;
+}
+	
+        @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-link {
+                margin-top: 10px;
+            }
+            main {
+                margin-top: 100px;
+                margin-left: 112px;
+            }
+            nav ul {
+                width: 120px;
+                text-indent: -5px;
+            }
+            .box {
+                width: calc(50% - 20px); /* 50% width with margin */
+            }
+            footer {
+                margin-left: 112px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <header> 
+            <h1 class="h1">Gender Equality</h1>      
+            <a class="newsletter" href="newsletter.html">Subscribe to our newsletter</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="KeyData&Insights.html">Key Data & Insights</a></li>
+                <li><a href="PersonalNarratives.html">Personal Narratives</a></li>
+                <li><a href="LearningHub.html">Learning Hub</a></li>
+                <li><a href="Policy.html">Policy & Advocacy</a></li>
+                <li><a href="Orgs&Movements.html">Organizations & Movements</a></li>
+                <li><a href="TakeAction.html">Take Action</a></li>
+                <li><a href="Summary.html">Summary & Next Steps</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <div>
+            <h3>LEADING ORGANIZATION PROFILES</h3>
+            <div class="container">
+                <!-- Leading Organization Boxes (unchanged) -->
+                <div class="box">
+                    <h3><img src="https://pcw.gov.ph/assets/files/2019/09/PCW-logo-violet_72dpi-1024x427.png"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://www.unwomen.org/sites/default/files/UN%20Women%20Logos/UN-Women-logo-social-media-1024x512-en.png"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Women_for_Women_International_logo.png"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://upload.wikimedia.org/wikipedia/en/4/4e/International_Center_for_Research_on_Women.png"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Association_for_Women%27s_Rights_in_Development_%28logo%29.png "></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT175qSDjlyfm4xf-RhrJIBKRcVxza9gMS4sCxHnQHRQlxqmvdJ"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://upload.wikimedia.org/wikipedia/en/0/03/European_Women%27s_Lobby_logo.png"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://www.amnesty.org/en/wp-content/uploads/2018/08/amnesty-international.jpg"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://equalitynow.storage.googleapis.com/wp-content/uploads/2021/11/04121745/In-Support-of-Equality-Now-Logo-Colour.png"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmp7IMkXhJgszNYJ7fSMbH6mcGVMBVvaE3KCUkccmXTYzHLFr"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZZ6VNnUtxF3GByfujL2wZL4h96_RvEZ6iUgGUezFm0qYwcjAU"></h3>
+                </div>
+                <div class="box">
+                    <h3><img src="https://upload.wikimedia.org/wikipedia/en/f/fb/MATCH_International_Women%27s_Fund_logo.png"></h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>GLOBAL MOVEMENTS & CAMPAIGNS</h3>
+            <div class="container2">
+                <!-- Global Movements & Campaigns Boxes -->
+                <div class="box">
+                    <img src="https://www.globalfundforwomen.org/wp-content/uploads/2023/03/DSC_0488-710x400.jpg">
+                    <h3><a href="https://www.globalfundforwomen.org/movements/climate-justice-in-caribbean/">FEMINIST ORGANIZING FOR CLIMATE JUSTICE IN THE CARIBBEAN</a></h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.globalfundforwomen.org/wp-content/uploads/2022/03/flora-710x400.jpg">
+                    <h3><a href="https://www.globalfundforwomen.org/movements/climate-justice-in-pacific/">FEMINIST ACTION FOR CLIMATE JUSTICE IN THE PACIFIC</a></h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.globalfundforwomen.org/wp-content/uploads/2021/01/IMG_3966-710x400.jpg">
+                    <h3><a href="https://www.globalfundforwomen.org/movements/peru/">ENDING SEXUAL AND GENDER-BASED VIOLENCE IN PERÚ</a></h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.globalfundforwomen.org/wp-content/uploads/2021/06/Copy-of-44292178930_28d56e5303_o-710x400.jpg">
+                    <h3><a href="https://www.globalfundforwomen.org/movements/me-too/">‘ME TOO.’ GLOBAL MOVEMENT</a></h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.globalfundforwomen.org/wp-content/uploads/2021/06/IMG-20210401-WA0004-710x400.jpg">
+                    <h3><a href="https://www.globalfundforwomen.org/movements/adolescent-girls-rights/">MOVING IN FEMINISM WITH ADOLESCENT LEADERS IN ACTION</a></h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.globalfundforwomen.org/wp-content/uploads/2021/06/BI6A0262-710x400.jpg">
+                    <h3><a href="https://www.globalfundforwomen.org/movements/anti-gender-based-violence-in-palestine/">PALESTINE FEMINIST ANTI-VIOLENCE MOVEMENT</a></h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.globalfundforwomen.org/wp-content/uploads/2021/05/d85e80f8-1f0d-415e-b50e-8e57d145000f-710x400.jpeg">
+                    <h3><a href="https://www.globalfundforwomen.org/movements/abortion-rights-in-east-africa/">ABORTION RIGHTS IN EAST AFRICA</a></h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.globalfundforwomen.org/wp-content/uploads/2021/01/NDWM-India-1-1-710x400.png">
+                    <h3><a href="https://www.globalfundforwomen.org/movements/domestic-workers-rights-movement/">DOMESTIC WORKERS RIGHTS MOVEMENT</a></h3>
+                </div>
+            </div>
+        </div>
+
+<div class="section">
+                <h2>Contact Us | We value your feedbacks </h2>
+                <div class="contact-form">
+                    <form action="contact_form.php" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/equalitynoworg/" target="_blank">Facebook</a>
+                <a href="https://x.com/UN_Women?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/equalitynoworg/?hl=en" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/pulse/what-actually-creates-gender-equality-work-emilie-aries-sphr" target="_blank">LinkedIn</a>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gender Equality. All rights reserved.</p>
+    </footer>
+</body>
+</html>

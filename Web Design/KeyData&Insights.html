@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gender Equality</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="icon" href="SDG 5 icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="KeyData&Insights.css"> 
+</head>
+<body>
+    <div class="fixed">
+        <header> 
+            <h1 class="h1">Gender Equality</h1>      
+            <a class="newsletter" href="newsletter.html">Subscribe to our newsletter</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="KeyData&Insights.html">Key Data & Insights</a></li>
+                <li><a href="PersonalNarratives.html">Personal Narratives</a></li>
+                <li><a href="LearningHub.html">Learning Hub</a></li>
+                <li><a href="Policy.html">Policy & Advocacy</a></li>
+                <li><a href="Orgs&Movements.html">Organizations & Movements</a></li>
+                <li><a href="TakeAction.html">Take Action</a></li>
+                <li><a href="Summary.html">Summary & Next Steps</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <div class="main">
+            <div class="section">
+                <h1>Key Data and Insights</h1>
+                <h2 class="h2">Introduction</h2>
+                <p>Gender equality is not only a fundamental human right but a necessary foundation for a peaceful, prosperous, and sustainable world. This webpage provides a snapshot of key data and insights on gender equality globally.</p>
+            </div>
+            <hr>
+            <div class="align">
+                <br>
+                <h2 >The world is not on track to achieving Gender Equality by 2030</h2>
+                <p style="font-size: 30px;">ONE IN THREE COUNTRIES</p>
+                <h4>have made no progress since 2015</h4>
+                <br>
+            </div>
+            <hr>
+            <div class="section">
+                <h2 class="h2">Key Statistics</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>47% of Women</h3>
+                        <p>Homicide victims worldwide intentionally killed by an intimate partner or family member.</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1 in 5</h3>
+                        <p>Women and girls aged 15 to 49 have experienced sexual violence in their lifetime.</p>
+                    </div>
+                    <div class="stat">
+                        <h3>49 Countries</h3>
+                        <p>Have no speicifc laws protecting women from domestic violence.</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="section">
+                <h2 class="h2">Trends Over Time</h2>
+                <div class="chart">
+                    <canvas id="myChart" style="width:100%;max-width:100%"></canvas>
+                    <script>
+                    const xValues = ["2020", "2021", "2022", "2023"];
+                    const yValues = [100, 136, 132, 131];
+        
+                    new Chart("myChart", {
+                    type: "bar",
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                        backgroundColor: [
+                        'rgb(191,49,49)',
+                        'rgb(191,49,49)',
+                        'rgb(191,49,49)',
+                        'rgb(191,49,49)'
+                        ],
+                        data: yValues
+                        }]
+                    },
+                    options: {
+                        legend: {display: false},
+                        title: {
+                        display: true,
+                        text: "Overall Gender Gap"
+                        }
+                    }
+                    });
+                    </script>
+                        
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="h2">Success Stories</h2>
+                <p>Read about the inspiring journeys of individuals and organizations who are making significant strides in advancing gender equality.</p>
+                <iframe class="iframe" src="https://www.unaids.org/en/topic/gender/stories" title="Stories about gender equality">
+                </iframe>
+            </div>
+
+            <div class="section">
+                <h2>Contact Us | We value your feedbacks </h2>
+                <div class="contact-form">
+                    <form action="contact_form.php" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/equalitynoworg/" target="_blank">Facebook</a>
+                <a href="https://x.com/UN_Women?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/equalitynoworg/?hl=en" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/pulse/what-actually-creates-gender-equality-work-emilie-aries-sphr" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gender Equality. All rights reserved.</p>
+    </footer>
+</body>
+</html>
